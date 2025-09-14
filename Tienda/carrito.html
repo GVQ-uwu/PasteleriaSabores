@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Estilos y Scripts -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <script src="js/productos-carrito-filtro.js"></script>
+</head>
+<body>
+   <!-- Barra Lateral --->
+    <div class="barra_lateral">
+        <h2>🍰 Pastelería Mil Sabores</h2>
+        <a href="inicio.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+    </div>
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+    <!-- Productos -->
+     <div class="contenedor-principal">
+         <section> 
+             <h2 class="titulo-principal">Nuestros Productos</h2>
+     
+             <div class="contenedor-tienda">
+                 <!-- Carrito -->
+                 <div class="carrito">
+                     <h2 class="titulo-carrito">🛒 Carrito</h2>
+                     <label for="filtroCategoria">Filtrar por categoría:</label>
+                     <select id="filtroCategoria" class="filtro-categoria"></select>
+                     <div id="carrito" class="carrito-items"></div>
+                     <p id="total" class="total">Total: $0</p>
+                     <button id="btnLimpiar" class="btn-limpiar">🗑️ Limpiar Carrito</button>
+                 </div>
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+                 <!-- Lista de productos -->
+                 <div id="listaProductos" class="productos">
+                     <!-- Ejemplo producto -->
+                     <div class="producto-item">
+                         <img src="Img/torta1.jpg" alt="Torta de Chocolate">
+                         <h3>Torta Cuadrada de Chocolate</h3>
+                         <p>Precio: $45.000</p>
+                         <button class="btn-agregar">Agregar al carrito</button>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Mil Sabores</title>
+    <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Estilos y Scripts -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+<!-- Barra Lateral --->
+<div class="barra_lateral">
+    <h2>🍰 Pastelería Mil Sabores</h2>
+    <a href="inicio.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="login.html">Iniciar Sesión</a>
+    <a href="carrito.html">🛒 Carrito</a>
+</div>
+
+    <!-- Contenido principal -->
+    <div class="contenedor-principal">
+        <!-- Inicio Sesión y Registro Boton onclick-->
+        <div class="auth-buttons"> 
+            <button onclick="location.href='Login.html'">Iniciar Sesión</button>
+            <button onclick="location.href='Login.html'">Registrarse</button>
+        </div>
+        <!-- Texto de bienvenida -->
+        <section class="bienvenida">
+            <h2>Bienvenidos</h2>
+            <br><br>
+            <p>Celebramos la dulzura de la vida con nuestras tortas y postres.</p>
+        </section>
+    </div>
+
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+
+    <!-- Productos -->
+    <section>
+        <h2>Nuestros Productos</h2>
+        <br>
+        <div class="productos">
+            <div class="producto">
+                <img src="Img/Torta Cuadrada de Chocolate.png" alt="Torta Cuadrada de Chocolate">
+                <p><b>Torta Cuadrada de Chocolate</b></p>
+                <p>Precio: $45.000</p>
+            </div>
+            
+            <div class="producto">
+                <img src="Img/Torta Cuadrada de Frutas.png" alt="Torta Cuadrada de Frutas">
+                <p><b>Torta Cuadrada de Frutas</b></p>
+                <p>Precio: $50.000</p>
+            </div>
+
+            <div class="producto">
+                <img src="Img/Torta Circular de Vainilla.png" alt="Torta Circular de Vainilla">
+                <p><b>Torta Circular de Vainilla</b></p>
+                <p>Precio: $40.000</p>
+            </div>
+
+            <div class="producto">
+                <img src="Img/Torta Circular de Manjar.png" alt="Torta Circular de Manjar">
+                <p><b>Torta Circular de Manjar</b></p>
+                <p>Precio: $42.000</p>
+            </div>
+    </section>
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+    <footer>
+        <div class="footer-left">
+            <p>🍰 Mil Sabores</p>
+            <a href="#">Tortas Cuadradas</a> |
+            <a href="#">Tortas Circulares</a> |
+            <a href="#">Postres Individuales</a>
+            <div class="cards">💳 VISA • MASTERCARD • AMEX</div>
+        <!-- Acceso Admin -->
+        <p><a href="../acceso-admin.html">Acceso Administrador</a></p>
+        </div>
+
+        <div class="footer-right">
+            <p>Suscríbete y recibe ofertas dulces 💌</p>
+            <input type="email" placeholder="Tu correo electrónico">
+            <button>Suscribirse</button>
+        </div>
+    </footer> 
+</body>
+</html>

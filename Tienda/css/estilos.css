@@ -1,0 +1,198 @@
+/* Estilo general */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #fff5e1; /* color crema */
+    color: #5d4037; /* marrón oscuro */
+    box-sizing: border-box;
+    margin-left: 180px;
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+/* Menú lateral fijo */
+.barra_lateral {
+  width: 200px;
+  height: 100vh;
+  background-color: #8B4513; /* marrón chocolate */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.barra_lateral h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.barra_lateral a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.barra_lateral a:hover {
+  background-color: #FFC0CB; /* rosa suave */
+  color: #5D4037; /* marrón oscuro */
+}
+
+/* Ajustar el contenido principal para que no quede debajo de la barra */
+.contenedor-principal {
+  padding: 20px;
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+.auth-buttons {
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.auth-buttons button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+  background: #ff69b4; /* rosado fuerte */
+  border: none;
+  border-radius: 5px; /* ligeramente redondeado */
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.2s ease; /* solo cambia el color suavemente */
+}
+
+/* Hover simple */
+.auth-buttons button:hover {
+  background: #ff85b8; /* tono más claro al pasar el mouse */
+}
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
+
+/* Bienvenida */
+.bienvenida {
+    background-color: white; 
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+/* Productos en cuadrícula */
+section h2 {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-bottom-width: 20px;
+    margin-left: 20px;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; /* permite que los productos salten de línea */
+    justify-content: center; /* centra los productos */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Solo los productos en grid/flex */
+.productos {
+    display: flex;
+    flex-wrap: wrap;     /* permite varias filas */
+    justify-content: center; /* centra los productos */
+    gap: 15px;           /* espacio entre productos */
+    flex-direction: row;
+    justify-content: center;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+/* Filtro Productos */
+div.filtro-categoria-productos {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+/* Formulario Contacto */
+section#contacto {
+    background-color: #fff5e1; /* color crema */
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+/* Pie de página */
+footer {
+    background-color: #ffc0cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding: 15px 30px;
+    font-size: 14px;
+    margin: 450px 0 0 0;
+    margin-left: 60px;
+    flex-direction: row
+}
+
+footer p {
+    margin: 0;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #5d4037;
+}
+
+a:hover {
+    font-size: 17px;
+    color: #d81b60; /* color rosado más oscuro al pasar el mouse */
+}
