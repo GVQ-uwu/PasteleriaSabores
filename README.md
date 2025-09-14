@@ -262,17 +262,12 @@ Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
 ## 👥 Créditos
 
-- **Desarrollador**: GVQ-uwu
-- **Proyecto**: Sistema de Pastelería Mil Sabores
-- **Año**: 2023
+- **Desarrollador**: Génesis Valdebenito y Natalia Quiroz.
+- **Proyecto**: Version 1  - Sistema de Pastelería Mil Sabores
 
 ## 📞 Contacto
 
 Para soporte o consultas sobre el proyecto:
 - **GitHub**: [@GVQ-uwu](https://github.com/GVQ-uwu)
-- **Repositorio**: [Proyecto-Pasteleria-Sabores](https://github.com/GVQ-uwu/pasteleriaSabores.git)
-
----
-
-⭐ Si este proyecto te fue útil, no olvides darle una estrella en GitHub!
+- **Repositorio**: [pasteleriaSabores](https://github.com/GVQ-uwu/pasteleriaSabores.git)
 
