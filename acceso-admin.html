@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Administradores</title>
+    <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Tienda/css/estilos.css">
+    <link rel="stylesheet" href="./Tienda/css/ventanas.css">
+    <style>
+        .volver-tienda a {
+            text-decoration: none;
+            color: #fff;
+            background-color: pink;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .admin-features {
+            margin-top: 20px;
+            text-align: center; 
+        }  
+
+        .admin-container {
+            background: #fff;
+            display: flex;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 30px;
+            align-items: center;
+            flex-direction: column;
+        }
+        .admin-info .input {
+            align-items: center;
+            flex-direction: column;
+        }
+        .input {
+            margin-bottom: 15px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body style="display: flex;display: flex
+; flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items: center;">
+    <h1 class="title-admin">Acceso Administrativo</h1>
+    
+    <div class="header">
+        <div class="volver-tienda">
+            <a href="./Tienda/inicio.html">Volver a Tienda</a>
+        </div>
+    </div>
+
+    <div class="admin-container">
+        <div class="admin-info">
+            <p>🔐 <strong>Acceso restringido</strong></p>
+            <p>Solo personal autorizado</p>
+        </div>
+        
+        <form class="admin-form" id="adminForm">
+            <div class="form-group">
+                <label for="adminEmail">Correo electrónico:</label>
+                <input type="email" id="adminEmail" placeholder="admin@tuempresa.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="adminPassword">Contraseña:</label>
+                <input type="password" id="adminPassword" placeholder="Ingresa tu contraseña" required>
+            </div>
+            
+            <button type="submit">Acceder al Panel</button>
+        </form>
+        
+        <div id="message" class="message"></div>
+    </div>
+    
+    <div class="admin-features">
+        <h3>Funcionalidades de Administrador</h3>
+        <div class="features-list">
+            <a class="feature">Gestionar Productos  |</a>
+            <a class="feature">Ver Estadísticas  |</a>
+            <a class="feature">Administrar Usuarios  |</a>
+            <a class="feature">Configurar Tienda  </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2023 Sistema Administrativo - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Elementos del DOM
+        const adminForm = document.getElementById('adminForm');
+        const messageDiv = document.getElementById('message');
+        
+        // Manejar inicio de sesión de administrador
+        adminForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('adminEmail').value;
+            const password = document.getElementById('adminPassword').value;
+            
+            // Verificar si es administrador (correo que termina en @admin)
+            if (email.endsWith('@admin')) {
+                if (password.length >= 6) {
+                    showMessage('¡Credenciales correctas! Redirigiendo al panel...', 'success');
+                    
+                    // Redirigir a la página de admin después de 2 segundos
+                    setTimeout(() => {
+                        // Redirección a home-ad.html
+                        window.location.href = './Admin/home-ad.html';
+                    }, 2000);
+                } else {
+                    showMessage('La contraseña debe tener al menos 6 caracteres', 'error');
+                }
+            } else {
+                showMessage('Error: Debes usar una cuenta de administrador (@admin)', 'error');
+            }
+        });
+        
+        // Función para mostrar mensajes
+        function showMessage(text, type) {
+            messageDiv.textContent = text;
+            messageDiv.className = `message ${type}`;
+            messageDiv.style.display = 'block';
+            
+            // Ocultar el mensaje después de 5 segundos
+            setTimeout(() => {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Ejemplo de correos administrativos para probar
+        const adminEmails = [
+            'admin@admin',
+            'administrador@admin',
+            'superuser@admin'
+        ];
+        
+        // Llenar aleatoriamente el campo de email al cargar la página
+        window.addEventListener('load', () => {
+            const randomEmail = adminEmails[Math.floor(Math.random() * adminEmails.length)];
+            document.getElementById('adminEmail').value = randomEmail;
+            document.getElementById('adminPassword').value = 'admin123'; // Contraseña de ejemplo
+        });
+        
+        // Obtener los botones
+        const backBtn = document.getElementById('backBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        
+    </script>
+</body>
+
+</html>
