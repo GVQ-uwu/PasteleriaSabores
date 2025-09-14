@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Usuarios - Admin Pastelería Mil Sabores</title>
+
+  <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Barra lateral -->
+  <div class="barra_lateral">
+    <h2>Panel Administrador</h2>
+    <a href="home-ad.html">Inicio</a>
+    <a href="productos_ad.html">Productos</a>
+    <a href="usuarios.html">Usuarios</a>
+    <a href="../Tienda/inicio.html">Cerrar Sesión</a>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="mensaje">
+    <h1>Gestión de Usuarios</h1>  
+    <p>Aquí puedes ver y administrar los usuarios registrados en la Pastelería Mil Sabores.</p>
+
+    <!-- Botón para añadir usuarios -->
+    <button id="agregarUsuarioBtn">➕ Agregar Usuario</button>
+
+    <!-- Tabla de usuarios --> 
+    <table>
+      <thead>
+        <tr>
+          <th>RUN</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Rol</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaUsuarios">
+        <!-- Los usuarios se cargarán con JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/usuario.js"></script>
+</body>
+</html>
