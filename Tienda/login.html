@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Estilos y Scripts -->
+    <link rel="stylesheet" href="css/ventanas.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/ventanas.js"></script>
+</head>
+<body>
+    
+    <!-- Barra Lateral --->
+    <div class="barra_lateral">
+        <h2>🍰 Pastelería Mil Sabores</h2>
+        <a href="inicio.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="more.html"> Más</a>
+        <a href="carrito.html">🛒 Carrito</a>
+    </div>
+    
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+
+    <!-- Login & Registro -->
+        <section class="auth">
+        <h2>Acceso</h2>
+
+        <!-- Barra de pestañas -->
+        <div class="tab-bar">
+            <button class="tab-button active" data-tab="login">Iniciar Sesión</button>
+            <button class="tab-button" data-tab="registro">Registrarse</button>
+        </div>
+
+        <!-- Contenido de Login -->
+        <div id="login" class="tab-content active">
+            <form>
+            <label for="email-login">Correo:</label>
+            <input type="email" id="email-login" placeholder="Tu correo" required>
+
+            <label for="password-login">Contraseña:</label>
+            <input type="password" id="password-login" placeholder="Tu contraseña" required>
+
+            <button type="submit">Entrar</button>
+            </form>
+            <p>¿No tienes cuenta? <span class="tab-link" data-tab="registro">Regístrate aquí</span></p>
+        </div>
+
+        <!-- Contenido de Registro -->
+        <div id="registro" class="tab-content">
+            <form>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+
+                <label for="email-registro">Correo:</label>
+                <input type="email" id="email-registro" placeholder="Tu correo" required>
+
+                <label for="email-confirmar">Confirmar correo:</label>
+                <input type="email" id="email-confirmar" placeholder="Confirma tu correo" required>
+
+                <label for="password-registro">Contraseña:</label>
+                <input type="password" id="password-registro" placeholder="Tu contraseña" required>
+
+                <label for="password-confirmar">Confirmar contraseña:</label>
+                <input type="password" id="password-confirmar" placeholder="Confirma tu contraseña" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" placeholder="+56 9 1234 5678" required>
+
+            <label for="region">Seleccione la región:</label>
+            <select id="region" required>
+                <option value="">-- Seleccione región --</option>
+            </select>
+
+            <label for="comuna">Seleccione la comuna:</label>
+            <select id="comuna" required>
+                <option value="">-- Seleccione comuna --</option>
+            </select>
+
+            <button type="submit">Registrarse</button>
+            </form>
+            <p>¿Ya tienes una cuenta? <span class="tab-link" data-tab="login">Inicia sesión aquí</span></p>
+        </div>
+        </section>
+
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-..-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+
+    <footer>
+        <div class="footer-left">
+            <p>🍰 Mil Sabores</p>
+            <a href="#">Tortas Cuadradas</a> |
+            <a href="#">Tortas Circulares</a> |
+            <a href="#">Postres Individuales</a>
+            <div class="cards">💳 VISA • MASTERCARD • AMEX</div>
+        <!-- Acceso Admin -->
+        <p><a href="../acceso-admin.html">Acceso Administrador</a></p>
+        </div>
+        <div class="footer-right">
+            <p>Suscríbete y recibe ofertas dulces 💌</p>
+            <input type="email" placeholder="Tu correo electrónico">
+            <button>Suscribirse</button>
+        </div>
+    </footer> 
+</body>
+</html>
