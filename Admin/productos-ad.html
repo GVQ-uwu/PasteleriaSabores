@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos_ad - Admin Pastelería Mil Sabores</title>
+  
+  <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+
+</head>
+<body>
+
+  <!-- Barra lateral -->
+  <div class="barra_lateral">
+    <h2>Panel Administrador</h2>
+    <a href="home-ad.html">Inicio</a>
+    <a href="productos_ad.html">Productos</a>
+    <a href="usuarios.html">Usuarios</a>
+    <a href="../Tienda/inicio.html">Cerrar Sesión</a>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="mensaje">   
+    <h1>Gestión de Productos</h1>
+    <p>Aquí puedes ver y administrar los productos de la Pastelería Mil Sabores.</p>
+
+    <!-- Botón para añadir productos -->
+    <button id="agregarBtn">➕ Agregar Producto</button>
+
+    <!-- Tabla de productos -->
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProductos">
+        <!-- Los productos se agregarán con JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/productos_ad.js"></script>
+</body>
+</html>

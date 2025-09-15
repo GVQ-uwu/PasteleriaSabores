@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Estilos y Scripts -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/ventanas.css">
+    <script src="js/ventanas.js"></script>
+</head>
+<body>
+    <!-- Barra Lateral --->
+<div class="barra_lateral">
+    <h2>🍰 Pastelería Mil Sabores</h2>
+    <a href="inicio.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="login.html">Iniciar Sesión</a>
+    <a href="more.html"> Más</a>
+    <a href="carrito.html">🛒 Carrito</a>
+</div>
+
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+    
+    <section class="contacto">
+    <h1>Contacto</h1>
+    <form id="formCliente">
+        <label for="nombre"> Ingresa tu nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+        <br>
+        <label for="correo"> Ingresa tu correo</label>
+        <input type="email" id="correo" name="correo" placeholder="nombre@gmail.com">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Mensaje de validación -->
+    <div id="mensaje" style="display:none; margin-top:10px;"></div>
+    </section>
+    
+<!--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-->
+    <footer>
+        <div class="footer-left">
+            <p>🍰 Mil Sabores</p>
+            <a href="#">Tortas Cuadradas</a> |
+            <a href="#">Tortas Circulares</a> |
+            <a href="#">Postres Individuales</a>
+            <div class="cards">💳 VISA • MASTERCARD • AMEX</div>
+        <!-- Acceso Admin -->
+        <p><a href="../acceso-admin.html">Acceso Administrador</a></p>
+        </div>
+
+        <div class="footer-right">
+            <p>Suscríbete y recibe ofertas dulces 💌</p>
+            <input type="email" placeholder="Tu correo electrónico">
+            <button>Suscribirse</button>
+        </div>
+    </footer> 
+</body>
+</html>

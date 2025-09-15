@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Iconos -->
+    <link rel="icon" sizes="192x192" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Img/iconPasteleria.png" type="image/x-icon" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Estilos y Scripts -->
+    <link rel="stylesheet" href="css/ventanas.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/ventanas.js"></script>
+</head>
+<body>
+
+    <!-- Barra Lateral --->
+    <div class="barra_lateral">
+        <h2>🍰 Pastelería Mil Sabores</h2>
+        <a href="inicio.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="more.html"> Más</a>
+        <a href="carrito.html">🛒 Carrito</a>
+    </div>
+
+    <section class="nosotros">
+        <h2 class="title-nosotros">Sobre Nosotros</h2>
+    <!-- Barra de pestañas -->
+        <div class="tab-bar">
+            <button class="tab-button active" data-tab="historia">Nuestra Historia</button>
+            <button class="tab-button" data-tab="equipo">Nuestro Equipo</button>
+            <button class="tab-button" data-tab="valores">Misión y Valores</button>
+        </div>
+
+        <!-- Contenido de pestañas -->
+        <div id="historia" class="tab-content active">
+            <p>
+            En Pastelería Mil Sabores, nos apasiona crear momentos dulces e inolvidables. 
+            Desde nuestros inicios, hemos estado comprometidos con la calidad, la creatividad y 
+            el servicio excepcional. Cada torta y postre que elaboramos es una obra de arte, 
+            hecha con los mejores ingredientes y mucho amor.
+            </p>
+        </div>
+
+        <div id="equipo" class="tab-content">
+            <p>
+            Nuestro equipo de pasteleros expertos trabaja incansablemente para innovar 
+            y ofrecer una variedad de productos que se adapten a todos los gustos y 
+            necesidades, incluyendo opciones sin azúcar, sin gluten y veganas.
+            </p>
+        </div>
+
+        <div id="valores" class="tab-content">
+            <p>
+            Creemos que cada celebración merece un toque especial, y estamos aquí para hacerlo realidad.  
+            Gracias por elegirnos para endulzar tus momentos más importantes.  
+            ¡Esperamos seguir siendo parte de tus celebraciones por muchos años más!
+            </p>
+        </div>
+    </section>
+<footer>
+        <div class="footer-left">
+            <p>🍰 Mil Sabores</p>
+            <div class="cards">💳 VISA • MASTERCARD • AMEX</div>
+        <!-- Acceso Admin -->
+        <p><a href="../acceso-admin.html">Acceso Administrador</a></p>
+        </div>
+</body>
+</html>
